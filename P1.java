@@ -1,6 +1,10 @@
 import java.util.*;
 interface I{
     void dup(List<Integer> list);
+
+    static void m1(){
+        System.out.println("This is static method...");
+    }
 }
 class P1{
     public static void main(String[] args) {
@@ -27,5 +31,7 @@ class P1{
         }
 
     System.out.println("To see Difference");
+
+    I.m1();
     }
 }
