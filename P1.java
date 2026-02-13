@@ -34,7 +34,19 @@ class P1{
 
     I.m1();
 
-    long sum = list.stream().reduce(0, (a,b)->(a+b));
-    System.out.println(sum);
+   
+        
+    try{
+        list.get(100);
     }
+    catch(Exception e){
+        e.printStackTrace();
+    }
+     long sum = list.stream().reduce(0, (a,b)->(a+b));
+    System.out.println(sum);
+
+    }
+
+
+    
 }
