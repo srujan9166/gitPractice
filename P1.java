@@ -33,5 +33,8 @@ class P1{
     System.out.println("To see Difference");
 
     I.m1();
+
+    long sum = list.stream().reduce(0, (a,b)->(a+b));
+    System.out.println(sum);
     }
 }
